@@ -1,0 +1,14 @@
+<FilesMatch "\.(htaccess|htpasswd|ini|fla|log|sh)$">
+Order Allow,Deny
+Deny from all
+</FilesMatch>
+
+
+RewriteEngine On
+
+RewriteRule główna index.php
+RewriteRule oferta oferta.php
+RewriteRule nowości nowosci.php
+RewriteRule opinie opinie.php
+RewriteRule kontakt kontakt.php
+RewriteRule logowanie logowanie.php
